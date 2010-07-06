@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.appender.log4j.MyLog4jAppender;
+
 /**
  * Teste de integracao, para executa-lo e necessario que o servico http://localhost:8080/listenMyApp/services/add esteja executando. <br>
  * Executa o teste da classe {@link MyLog4jAppender}, criando o logger via programacao.<br>
