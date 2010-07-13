@@ -6,11 +6,6 @@
   <packaging>jar</packaging>
   <version>0.0.1</version>
   <name>appender</name>
-  <parent>
-  	<artifactId>listenMyApp</artifactId>
-  	<groupId>com.listenMyApp</groupId>
-  	<version>0.0.1-SNAPSHOT</version>
-  </parent>
   
   <description>Module to be used with listenMyApp project.</description>
   <url>http://www.listenMyApp.com</url>
