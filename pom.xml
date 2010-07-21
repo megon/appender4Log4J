@@ -3,14 +3,14 @@
   <groupId>com.listenMyApp</groupId>
   <artifactId>appender-log4j</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>appender</name>
   
   
   <description>Module to be used with listenMyApp project.</description>
 	 <url>http://www.listenMyApp.com</url>
 	<build>
-		<finalName>appender-log4j</finalName>
+		<finalName>appender4Log4j</finalName>
 		<plugins>
 		<plugin>
 		    <groupId>org.apache.maven.plugins</groupId>
@@ -66,11 +66,11 @@
     		</exclusion>
     	</exclusions>
     </dependency>
-	<dependency>
-		<groupId>org.apache.httpcomponents</groupId>
-		<artifactId>httpclient</artifactId>
-		<version>4.0.1</version>
-		<scope>compile</scope>
-	</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.0.1</version>
+			<scope>compile</scope>
+		</dependency>
   </dependencies>
 </project>
