@@ -11,6 +11,17 @@
 	 <url>http://www.listenMyApp.com</url>
 	<build>
 		<finalName>appender-log4j</finalName>
+		<plugins>
+		<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-compiler-plugin</artifactId>
+		    <version>2.0.2</version>
+		    <configuration>
+		        <source>1.6</source>
+		        <target>1.6</target>
+		    </configuration>
+		</plugin>
+		</plugins>
 	</build>
 	<scm>
 		<connection>scm:git:https://mrmarcondes@github.com/mrmarcondes/appender4Log4J.git</connection>
