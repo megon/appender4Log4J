@@ -25,7 +25,6 @@
 	</build>
 	<scm>
 		<connection>scm:git:https://mrmarcondes@github.com/mrmarcondes/appender4Log4J.git</connection>
-		
 	</scm>    
 	<distributionManagement>
 		<repository>
