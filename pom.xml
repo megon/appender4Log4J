@@ -4,14 +4,25 @@
   <groupId>com.listenMyApp</groupId>
   <artifactId>appender-log4j</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>appender</name>
   
   <description>Module to be used with listenMyApp project.</description>
   <url>http://www.listenMyApp.com</url>
-  <build>
+	<build>
 		<finalName>appender-log4j</finalName>
-	</build>    
+	</build>
+	<scm>
+		<connection>scm:git:https://mrmarcondes@github.com/mrmarcondes/appender4Log4J.git</connection>
+	</scm>    
+	<distributionManagement>
+		<repository>
+			<id>repo</id>
+			<name>localRepository</name>
+			<url>file:///d:/temp</url>
+		</repository>
+	</distributionManagement>
+
 
   <dependencies>
 	  
@@ -49,6 +60,13 @@
 		<groupId>org.apache.httpcomponents</groupId>
 		<artifactId>httpclient</artifactId>
 		<version>4.0.1</version>
+		<scope>compile</scope>
+	</dependency>
+	<dependency>
+		<groupId>com.thoughtworks.xstream</groupId>
+		<artifactId>xstream</artifactId>
+		<version>1.3.1</version>
+		<type>jar</type>
 		<scope>compile</scope>
 	</dependency>
   </dependencies>
