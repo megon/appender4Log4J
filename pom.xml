@@ -3,12 +3,12 @@
   <groupId>com.listenMyApp</groupId>
   <artifactId>appender-log4j</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>appender</name>
   
   
-  <description>Module to be used with listenMyApp project.</description>
-	 <url>http://www.listenMyApp.com</url>
+  <description>Module to be used with listenToMyApp project.</description>
+	 <url>http://www.listenToMyApp.com</url>
 	<build>
 		<finalName>appender4Log4j</finalName>
 		<plugins>
@@ -27,11 +27,11 @@
 		<connection>scm:git:https://mrmarcondes@github.com/mrmarcondes/appender4Log4J.git</connection>
 	</scm>    
 	<distributionManagement>
-		<repository>
-			<id>repo</id>
-			<name>localRepository</name>
-			<url>file:///d:/temp</url>
-		</repository>
+	    <repository>
+	        <id>central</id>
+	        <name>central</name>
+	        <url>http://www.listentomyapp.com/maven/central</url>
+	    </repository>
 	</distributionManagement>
 	
   <dependencies>
