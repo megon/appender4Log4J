@@ -1,7 +1,5 @@
 package com.appender.service;
 
-import java.util.Date;
-
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -10,9 +8,6 @@ import com.appender.service.EventNotifierService;
 import com.appender.service.impl.EventNotifierServiceImpl;
 
 /**
- * Teste de integracao, para executa-lo e necessario que o servico http://localhost:8080/listenMyApp/services/add esteja executando. <br>
- * Executa o teste da classe {@link EventNotifierServiceImpl}.<br>
- * 
  * @author Marco Rojo
  * Data: 30/01/2010
  */

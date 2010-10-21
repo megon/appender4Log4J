@@ -9,16 +9,21 @@ import com.appender.service.EventNotifierException;
 import com.appender.service.EventNotifierService;
 import com.appender.service.impl.EventNotifierServiceImpl;
 
-
 public class MyLog4jAppender extends AppenderSkeleton {
 	
 	private final Logger logger = Logger.getLogger(getClass());
 
 	private String key;
 	private String env;
-	private final EventNotifierService notifier = new EventNotifierServiceImpl();
+	private EventNotifierService notifier;
 	
+	public MyLog4jAppender(EventNotifierService eventNotifier){
+		notifier = eventNotifier;
+	}
 	
+	public MyLog4jAppender(){
+		notifier = new EventNotifierServiceImpl();
+	}
 	
 	@Override
 	public void close() {

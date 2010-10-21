@@ -17,7 +17,6 @@ public class MyEventTest{
 	
 	@BeforeClass
 	public static void onTimeSetup() throws Exception {
-		System.out.println("onTimeSetup");
 		xmlRequest.append("<event>");
 		xmlRequest.append("<environment>production</environment>");
 		xmlRequest.append("<projectKey>asxcdsa12s5c1s52s</projectKey>");
@@ -37,8 +36,6 @@ public class MyEventTest{
 	
 	@Test
 	public void testToXML() throws Exception {
-		System.out.println("testToXML");
-		
 		MyEvent event = new MyEvent();		
 		event.setEnv("production");
 		event.setKey("asxcdsa12s5c1s52s");
@@ -55,7 +52,6 @@ public class MyEventTest{
 		event.setCategory("INFO");
 
 		assertEquals( xmlRequest.toString(), event.toXML().toString() );
-		System.out.println(event.toXML());
 	}
 	
 }
